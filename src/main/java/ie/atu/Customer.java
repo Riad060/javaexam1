@@ -1,5 +1,7 @@
 package ie.atu;
 
+import java.util.ArrayList;
+
 public class Customer {
     String name;
     String id;
@@ -26,7 +28,7 @@ public class Customer {
     }
 
 
-    public void setType(String email) {
+    public void setType(String) {
         this.Email = email;
     }
     public String getType() {
@@ -46,5 +48,16 @@ public class Customer {
         return"customer{" +
                 "name='"+name + '\" +
                 '}' ;
+    }
+    ArrayList<String> tasks = new ArrayList<>();
+
+    tasks.add("CystomerId");
+    tasks.add("name of customer");
+    tasks.add("email address of customer");
+    tasks.add("contact number of the customer");
+
+    System.out.println("task list:");
+    for (int i = 0; i< tasks.size(); i++){
+        System.out.println((i + 1) + ". " + tasks.get(i));
     }
  }
