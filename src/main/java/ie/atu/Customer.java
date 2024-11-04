@@ -3,9 +3,10 @@ package ie.atu;
 public class Customer {
     String name;
     String id;
-    String type;
+    String Email;
+    String phone;
     public String getName(){
-        return none;
+        return name;
     }
 
     public void setName(String name) {
@@ -20,11 +21,30 @@ public class Customer {
         this.id = id;
     }
 
-    public String getType() {
-        return type;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setType(String type) {
-        this.type = type;
+
+    public void setType(String email) {
+        this.Email = email;
     }
-}
+    public String getType() {
+        return phone;
+    }
+    public void setType(String phone) {
+        this.phone = phone;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public StringToString(){
+        return"customer{" +
+                "name='"+name + '\" +
+                '}' ;
+    }
+ }
